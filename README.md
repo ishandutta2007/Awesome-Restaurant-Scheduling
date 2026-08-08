@@ -50,47 +50,47 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## 💻 Open-Source GitHub Projects
 
-- **[AutoShiftPlanner](https://github.com/betaiotazeta/AutoShiftPlanner)**  
-  Free open-source application for generating detailed employee shift schedules based on rules, preferences, and heuristic algorithms.
-
-- **[DutyDock](https://github.com/dutydock/dutydock)**  
-  Open-source shift planning and rostering software designed for teams with complex scheduling constraints.
-
-- **[ERPNext HR / Shift Management](https://github.com/frappe/erpnext)**  
-  Open-source ERP suite with human resources and shift scheduling modules that can be adapted for restaurant workforce management.
-
-- **[Harmobot](https://github.com/m-walas/Harmobot)**  
-  Intelligent open-source automatic schedule generator using Google OR-Tools for creating optimal work schedules from availability and constraints.
-
-- **[Odoo HR](https://github.com/odoo/odoo)**  
+- **[Odoo HR](https://github.com/odoo/odoo)** [![Stars](https://img.shields.io/github/stars/odoo/odoo?style=social&color=white)](https://github.com/odoo/odoo/stargazers)  
   Comprehensive open-source ERP with integrated HR, time tracking, and shift scheduling functionalities suitable for hospitality.
 
-- **[OptaPlanner](https://github.com/kiegroup/optaplanner)**  
-  Powerful open-source constraint satisfaction solver often used as the engine behind complex restaurant staff scheduling and rostering systems.
+- **[ERPNext HR / Shift Management](https://github.com/frappe/erpnext)** [![Stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers)  
+  Open-source ERP suite with human resources and shift scheduling modules that can be adapted for restaurant workforce management.
 
-- **[OR-Tools Nurse/Employee Scheduling Examples](https://github.com/google/or-tools)**  
+- **[OR-Tools Nurse/Employee Scheduling Examples](https://github.com/google/or-tools)** [![Stars](https://img.shields.io/github/stars/google/or-tools?style=social&color=white)](https://github.com/google/or-tools/stargazers)  
   Official Google OR-Tools examples and constraint programming models widely adapted for restaurant and shift scheduling problems.
 
-- **[pyworkforce](https://github.com/rodrigo-arenas/pyworkforce)**  
+- **[OptaPlanner](https://github.com/kiegroup/optaplanner)** [![Stars](https://img.shields.io/github/stars/kiegroup/optaplanner?style=social&color=white)](https://github.com/kiegroup/optaplanner/stargazers)  
+  Powerful open-source constraint satisfaction solver often used as the engine behind complex restaurant staff scheduling and rostering systems.
+
+- **[pyworkforce](https://github.com/rodrigo-arenas/pyworkforce)** [![Stars](https://img.shields.io/github/stars/rodrigo-arenas/pyworkforce?style=social&color=white)](https://github.com/rodrigo-arenas/pyworkforce/stargazers)  
   Practical Python library for workforce management covering shift scheduling, rostering, break placement, and queuing models powered by OR-Tools.
 
-- **[Restaurant / Employee Scheduler Projects](https://github.com/marcpage/scheduling)**  
-  Community open-source restaurant staff scheduling prototypes and websites focused on availability and basic roster communication.
-
-- **[Roster Wizard](https://github.com/galojix/roster-wizard)**  
+- **[Roster Wizard](https://github.com/galojix/roster-wizard)** [![Stars](https://img.shields.io/github/stars/galojix/roster-wizard?style=social&color=white)](https://github.com/galojix/roster-wizard/stargazers)  
   Automatic rostering system built with Google OR-Tools that handles skill mix requirements, staff requests, shift sequence rules, and leave management.
 
-- **[Schichtplaner](https://github.com/lennystepn-hue/schichtplaner)**  
-  Self-hosted open-source shift planning software with real-time collaboration, employee preferences, and AI-assisted optimization.
+- **[TimeTables](https://github.com/dlsnyder8/TimeTables)** [![Stars](https://img.shields.io/github/stars/dlsnyder8/TimeTables?style=social&color=white)](https://github.com/dlsnyder8/TimeTables/stargazers)  
+  Open-source employee shift scheduling and management application with automatic schedule generation using constraint algorithms, availability input, and multi-group support.
 
-- **[Shift-Scheduler & Related Scripts](https://github.com/codejudas/Shift-Scheduler)**  
+- **[AutoShiftPlanner](https://github.com/betaiotazeta/AutoShiftPlanner)** [![Stars](https://img.shields.io/github/stars/betaiotazeta/AutoShiftPlanner?style=social&color=white)](https://github.com/betaiotazeta/AutoShiftPlanner/stargazers)  
+  Free open-source application for generating detailed employee shift schedules based on rules, preferences, and heuristic algorithms.
+
+- **[DutyDock](https://github.com/dutydock/dutydock)** [![Stars](https://img.shields.io/github/stars/dutydock/dutydock?style=social&color=white)](https://github.com/dutydock/dutydock/stargazers)  
+  Open-source shift planning and rostering software designed for teams with complex scheduling constraints.
+
+- **[Harmobot](https://github.com/m-walas/Harmobot)** [![Stars](https://img.shields.io/github/stars/m-walas/Harmobot?style=social&color=white)](https://github.com/m-walas/Harmobot/stargazers)  
+  Intelligent open-source automatic schedule generator using Google OR-Tools for creating optimal work schedules from availability and constraints.
+
+- **[Restaurant / Employee Scheduler Projects](https://github.com/marcpage/scheduling)** [![Stars](https://img.shields.io/github/stars/marcpage/scheduling?style=social&color=white)](https://github.com/marcpage/scheduling/stargazers)  
+  Community open-source restaurant staff scheduling prototypes and websites focused on availability and basic roster communication.
+
+- **[Shift-Scheduler & Related Scripts](https://github.com/codejudas/Shift-Scheduler)** [![Stars](https://img.shields.io/github/stars/codejudas/Shift-Scheduler?style=social&color=white)](https://github.com/codejudas/Shift-Scheduler/stargazers)  
   Open-source Python tools originally designed for scheduling restaurant waiters and similar shift-based roles.
 
-- **[Team Schedule](https://github.com/aleksandrrudenko/team-schedule)**  
+- **[Team Schedule](https://github.com/aleksandrrudenko/team-schedule)** [![Stars](https://img.shields.io/github/stars/aleksandrrudenko/team-schedule?style=social&color=white)](https://github.com/aleksandrrudenko/team-schedule/stargazers)  
   Open-source scheduling system for distributed teams with follow-the-sun coverage, overtime prevention, and on-call rotation support.
 
-- **[TimeTables](https://github.com/dlsnyder8/TimeTables)**  
-  Open-source employee shift scheduling and management application with automatic schedule generation using constraint algorithms, availability input, and multi-group support.
+- **[Schichtplaner](https://github.com/lennystepn-hue/schichtplaner)** [![Stars](https://img.shields.io/github/stars/lennystepn-hue/schichtplaner?style=social&color=white)](https://github.com/lennystepn-hue/schichtplaner/stargazers)  
+  Self-hosted open-source shift planning software with real-time collaboration, employee preferences, and AI-assisted optimization.
 
 ### 🔧 Additional Strong Open-Source Options
 
