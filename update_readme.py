@@ -1,40 +1,10 @@
-<p align="center">
-  <img src="assets/banner.svg" alt="Awesome Restaurant Scheduling Banner" width="100%">
-</p>
+import re
 
-<p align="center">
-  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
-  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
-</p>
+with open('README.md', 'r', encoding='utf-8') as f:
+    content = f.read()
 
-> **SEO Description**: A comprehensive, awesome list of the best restaurant scheduling software, SaaS platforms, and open-source GitHub projects for shift management, time tracking, and labor forecasting. Enhance your workforce operations with these tools.
-
-# 🌟 Awesome-Restaurant-Scheduling
-
-## 🚀 Top Restaurant Scheduling Platforms Ecosystem
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Staff Scheduling, Shift Management, Labor Forecasting, Time & Attendance and Restaurant Workforce Operations*  
-**Last updated: August 2026**
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Restaurant Scheduling**. These tools help restaurants and hospitality businesses create fair schedules, manage shift swaps, track availability, forecast labor needs, handle time clocks, ensure compliance, and communicate with teams.
-
-**Examples** include 7shifts, HotSchedules, When I Work, Deputy, Homebase, Planday, Sling, ZoomShift, Humanity, Schedulefly, and Connecteam (the category leaders).
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for employee scheduling, rostering, shift optimization, workforce management, and related open tools — ideal for restaurants, hospitality operators, and developers seeking customizable or self-hosted alternatives to commercial scheduling software.
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## 📋 Table of Contents
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## 💼 SaaS/Hosted Platforms
-
-| Product | Description | Size (Valuation/Revenue) | Pricing | Free Tier Limit |
+# 1. Update Free Tier Limit in SaaS table
+saas_table = """| Product | Description | Size (Valuation/Revenue) | Pricing | Free Tier Limit |
 |---------|-------------|--------------------------|---------|-----------------|
 | **[Deputy](https://www.deputy.com/)** | Flexible workforce management platform offering automated scheduling, time tracking, and multi-location support. | $1.1B Valuation | Starts at $5.00/user/mo | 14-day free trial |
 | **[HotSchedules (Fourth)](https://www.fourth.com/)** | Widely adopted hospitality workforce management suite covering scheduling, time & attendance, labor forecasting. | $1.0B Valuation | Custom enterprise pricing | 14-day free trial |
@@ -46,11 +16,12 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 | **[Humanity](https://www.humanity.com/)** | Workforce management platform offering scheduling, time clocks, and attendance features. | $50M Revenue (TCP) | Starts at $3.00/user/mo | 30-day free trial |
 | **[Sling](https://getsling.com/)** | Free and paid employee scheduling app with messaging, time tracking, and shift management. | $20M Revenue (Toast) | Starts at $1.70/user/mo | Up to 30 users |
 | **[Schedulefly](https://www.schedulefly.com/)** | Restaurant-oriented scheduling tool emphasizing simplicity, employee messaging, and basic shift management. | $2M Revenue | Starts at $30/mo (19 staff) | 30-day free trial |
-| **[ZoomShift](https://www.zoomshift.com/)** | Straightforward employee scheduling software with drag-and-drop tools, availability tracking. | $1M Revenue | Starts at $2.00/user/mo | 14-day free trial |
+| **[ZoomShift](https://www.zoomshift.com/)** | Straightforward employee scheduling software with drag-and-drop tools, availability tracking. | $1M Revenue | Starts at $2.00/user/mo | 14-day free trial |"""
 
-## 💻 Open-Source GitHub Projects
+content = re.sub(r'\| Product \| Description.*?\| ZoomShift.*?\n', saas_table + '\n', content, flags=re.DOTALL)
 
-- **[AutoShiftPlanner](https://github.com/betaiotazeta/AutoShiftPlanner)**  
+# 2. Update Open Source List
+os_list = """- **[AutoShiftPlanner](https://github.com/betaiotazeta/AutoShiftPlanner)**  
   Free open-source application for generating detailed employee shift schedules based on rules, preferences, and heuristic algorithms.
 
 - **[DutyDock](https://github.com/dutydock/dutydock)**  
@@ -90,38 +61,43 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
   Open-source scheduling system for distributed teams with follow-the-sun coverage, overtime prevention, and on-call rotation support.
 
 - **[TimeTables](https://github.com/dlsnyder8/TimeTables)**  
-  Open-source employee shift scheduling and management application with automatic schedule generation using constraint algorithms, availability input, and multi-group support.
+  Open-source employee shift scheduling and management application with automatic schedule generation using constraint algorithms, availability input, and multi-group support."""
 
-### 🔧 Additional Strong Open-Source Options
+content = re.sub(r'- \*\*\[TimeTables\].*?shift-based roles\.\n', os_list + '\n', content, flags=re.DOTALL)
 
-- **Constraint solvers**: Google OR-Tools, OptaPlanner, and related libraries for building custom restaurant scheduling engines.
-- **ERP & HR modules**: Odoo Community HR, ERPNext, and Dolibarr attendance/scheduling components.
-- **Time tracking companions**: Open-source time-clock and attendance tools that pair with scheduling systems.
-- **Optimization notebooks**: Community Jupyter notebooks and scripts for labor forecasting and shift optimization.
-- Many smaller **restaurant-specific** or **hospitality roster** prototypes and academic scheduling projects on GitHub.
+# SEO text
+seo_text = '''
+> **SEO Description**: A comprehensive, awesome list of the best restaurant scheduling software, SaaS platforms, and open-source GitHub projects for shift management, time tracking, and labor forecasting. Enhance your workforce operations with these tools.
+'''
 
-**Frameworks for building custom systems**: Combine **OR-Tools or pyworkforce** for optimization, **TimeTables / Roster Wizard / DutyDock** for core rostering logic, open time-tracking tools, and a simple web frontend (or ERPNext) to create a self-hosted restaurant scheduling platform tailored to your operations.
+# 3, 4, 5, 6, 7. Banner, Badges, Emojis, SEO
+banner_html = f'''<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Restaurant Scheduling Banner" width="100%">
+</p>
 
-## 🤝 How to Contribute
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
+{seo_text}
 
-Star the repo if you find it useful!
+'''
 
-## ⚠️ Disclaimer
+content = content.replace('# Awesome-Restaurant-Scheduling', banner_html + '# 🌟 Awesome-Restaurant-Scheduling')
 
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Restaurant scheduling tools must comply with local labor laws, overtime rules, tip regulations, and predictive scheduling ordinances where applicable.
-- Self-hosted open-source solutions require proper security, data privacy handling for employee information, and ongoing maintenance.
+# Emojis for headings
+content = content.replace('## Top Restaurant Scheduling Platforms Ecosystem', '## 🚀 Top Restaurant Scheduling Platforms Ecosystem')
+content = content.replace('## Table of Contents', '## 📋 Table of Contents')
+content = content.replace('## SaaS/Hosted Platforms', '## 💼 SaaS/Hosted Platforms')
+content = content.replace('## Open-Source GitHub Projects', '## 💻 Open-Source GitHub Projects')
+content = content.replace('### Additional Strong Open-Source Options', '### 🔧 Additional Strong Open-Source Options')
+content = content.replace('## How to Contribute', '## 🤝 How to Contribute')
+content = content.replace('## Disclaimer', '## ⚠️ Disclaimer')
 
----
-
-**Made for restaurant owners, managers, hospitality operators, and developers building better workforce tools.**  
-Let's make staff scheduling more open, fair, and efficient for the industry.
-
+# 8. Star History
+star_history = """
 ## 🌟 Star History
 <div align="center">
 <a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Restaurant-Scheduling&type=date&legend=bottom-right">
@@ -132,3 +108,14 @@ Let's make staff scheduling more open, fair, and efficient for the industry.
 </picture>
 </a>
 </div>
+"""
+content += star_history
+
+# 9. Replace chartrepos with chart?repos
+content = content.replace('chartrepos', 'chart?repos')
+
+# 10. Replace https://github.com/sindresorhus/awesome with https://github.com/ishandutta2007/Awesome-Awesome-Awesome
+content = content.replace('https://github.com/sindresorhus/awesome', 'https://github.com/ishandutta2007/Awesome-Awesome-Awesome')
+
+with open('README.md', 'w', encoding='utf-8') as f:
+    f.write(content)
